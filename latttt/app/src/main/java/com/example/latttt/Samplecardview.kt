@@ -9,15 +9,15 @@ import com.example.latttt.adapter.PetaniAdapter
 import com.example.latttt.adapter.PetaniAdapterCv
 
 class Samplecardview : AppCompatActivity() {
-    lateinit var rvSample : RecyclerView
+    lateinit var cvSample : RecyclerView
     lateinit var petaniAdaptercv: PetaniAdapterCv
     lateinit var lPetani: List<Petani>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_samplerecyclerview)
+        setContentView(R.layout.activity_samplecardview)
 
-        rvSample = findViewById(R.id.rvLatihan)
+        cvSample = findViewById(R.id.cvLatihan)
 
         lPetani = listOf(
             Petani(user="D01",nama="Adindaa",jumlahLahan ="50",identifikasi ="40",tambahLahan ="40"),
@@ -28,7 +28,7 @@ class Samplecardview : AppCompatActivity() {
         )
         petaniAdaptercv = PetaniAdapterCv(lPetani)
 
-        rvSample.apply{
+        cvSample.apply{
             layoutManager = LinearLayoutManager(this@Samplecardview)
             adapter=petaniAdaptercv
 

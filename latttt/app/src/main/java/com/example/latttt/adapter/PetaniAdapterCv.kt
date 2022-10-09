@@ -16,7 +16,7 @@ class PetaniAdapterCv(val petani: List<Petani>):
         viewType: Int
     ): PetaniAdapterCv.PetaniHolder {
         return(
-        PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_item_dutatani,
+        PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.cv_item_dutatani,
             parent, false)))
     }
     override fun onBindViewHolder(holder: PetaniAdapterCv.PetaniHolder, position: Int) {
