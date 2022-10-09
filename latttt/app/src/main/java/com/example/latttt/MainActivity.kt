@@ -1,6 +1,9 @@
 package com.example.latttt
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -13,6 +16,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+    lateinit var btnrv : Button
+    lateinit var btncv : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,21 +25,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+        btnrv = findViewById(R.id.btnrv)
+        btncv = findViewById(R.id.btncv)
 
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+        btnrv.setOnClickListener(View.OnClickListener { view->
+        var intent = Intent(this@MainActivity,Samplerecyclerview::class.java)
+        startActivity(intent)
+        finish()
+    })
+        btncv.setOnClickListener(View.OnClickListener { view->
+            var intent = Intent(this@MainActivity,Samplecardview::class.java)
+            startActivity(intent)
+            finish()
+        })
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
-    }
+
+
 }
