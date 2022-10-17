@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/activity_get_apiactivity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/activity_mahasiswa_insert.xml" value="0.14" />
         <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/activity_samplecardview.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/activity_samplerecyclerview.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/activity_service.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/cv_item_dutatani.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/rv_item_dutatani.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/New folder/latttt/app/src/main/res/layout/rvuserapi.xml" value="0.5" />
         <entry key="..\:/Users/user/AndroidStudioProjects/latttt/app/src/main/res/layout/activity_edit_data.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/latttt/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/latttt/app/src/main/res/layout/activity_sample_list.xml" value="0.25" />

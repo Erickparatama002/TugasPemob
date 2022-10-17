@@ -35,7 +35,7 @@ class PetaniAdapterCv(val petani: List<Petani>):
         fun bindPetani(petani: Petani) {
             itemView.apply {
                 txtUser = findViewById(R.id.txtuser)
-                txtNama = findViewById(R.id.txtnama)
+                txtNama = findViewById(R.id.txtnim)
                 txtJumlahLahan = findViewById(R.id.txtjumlahlahan)
                 txtIdentifikasi = findViewById(R.id.txtidentifikasi)
                 txtTambahLahan = findViewById(R.id.txttambahlahan)
