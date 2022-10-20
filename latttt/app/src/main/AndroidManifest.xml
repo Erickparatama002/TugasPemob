@@ -16,8 +16,8 @@
         android:theme="@style/Theme.Latttt"
         tools:targetApi="31">
         <activity
-            android:name=".MahasiswaInsert"
-            android:exported="true" >
+            android:name=".UtsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,11 +25,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MahasiswaInsert"
+            android:exported="true" />
+        <activity
             android:name=".GetAPIActivity"
             android:exported="true" />
         <activity
             android:name=".ServiceActivity"
-            android:exported="true"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Samplecardview"
             android:exported="false" />

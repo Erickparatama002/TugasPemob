@@ -33,9 +33,9 @@ class NetworkConfig {
     fun getService() = getRetrofit().create(Users::class.java)
 }
 interface Users {
-    @GET("users")
-    fun getUsers(): Call<List<ResponseItem>>
     @POST("api/progmob/mhs/create")
     fun addMhs(@Body req : ResponseMhsItem): Call<ResponseMhs>
+    @GET("api/progmob/mhs/{nim_progmob}")
+    fun getUsers(): Call<List<ResponseItem>>
 }
 

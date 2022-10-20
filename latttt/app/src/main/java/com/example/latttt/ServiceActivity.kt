@@ -9,15 +9,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import com.example.latttt.databinding.ActivityMainBinding
 
 class ServiceActivity : AppCompatActivity() {
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
     lateinit var btnGetAPI : Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         btnGetAPI = findViewById(R.id.btnGetAPI)
         btnGetAPI.setOnClickListener(View.OnClickListener { view->

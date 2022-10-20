@@ -37,7 +37,7 @@ RecyclerView.Adapter<UsersAdapter.UsersHolder>() {
         fun bindUsers(users: ResponseItem?) {
             itemView.apply {
                 txtNama = findViewById(R.id.nama)
-                txtEmail =findViewById(R.id.email)
+                txtEmail = findViewById(R.id.email)
                 txtAlamat = findViewById(R.id.alamat)
                 txtNoTelp = findViewById(R.id.notelp)
                 txtNama.text = users?.name
